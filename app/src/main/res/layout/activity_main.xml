@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jazzzzum.labexer3.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data"
+        android:height="50dp"
+        android:id="@+id/tvMessage"
+        android:layout_alignLeft="@+id/tvFileName"
+        android:layout_alignStart="@+id/tvFileName" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filename"
+        android:height="50dp"
+        android:layout_below="@+id/tvMessage"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:id="@+id/tvFileName" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMessage"
+        android:width="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnSharedPreferences"
+        android:layout_alignEnd="@+id/btnSharedPreferences" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etFileName"
+        android:width="200dp"
+
+        android:layout_alignBottom="@+id/tvFileName"
+        android:layout_alignLeft="@+id/etMessage"
+        android:layout_alignStart="@+id/etMessage" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Shared Preferences"
+        android:onClick="saveSharedPreferences"
+        android:id="@+id/btnSharedPreferences"
+        android:layout_below="@+id/tvFileName"
+        android:layout_alignLeft="@+id/btnInternalStorage"
+        android:layout_alignStart="@+id/btnInternalStorage" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Internal Storage"
+        android:onClick="saveInternalStorage"
+        android:id="@+id/btnInternalStorage"
+        android:layout_below="@+id/btnSharedPreferences"
+        android:layout_alignLeft="@+id/btnInternalC"
+        android:layout_alignStart="@+id/btnInternalC" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Internal Cache"
+        android:onClick="saveInternalCache"
+        android:id="@+id/btnInternalC"
+        android:layout_below="@+id/btnInternalStorage"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="External Cache"
+        android:onClick="saveExternalCache"
+        android:id="@+id/btnExternalC"
+        android:layout_below="@+id/btnInternalC"
+        android:layout_alignLeft="@+id/btnInternalC"
+        android:layout_alignStart="@+id/btnInternalC" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Externnal Storage"
+        android:onClick="saveExternalStorage"
+        android:id="@+id/btnExternalS"
+        android:layout_below="@+id/btnExternalC"
+        android:layout_alignLeft="@+id/btnExternalC"
+        android:layout_alignStart="@+id/btnExternalC" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="External Public"
+        android:onClick="saveExternalPublic"
+        android:id="@+id/btnExternalP"
+        android:layout_below="@+id/btnExternalS"
+        android:layout_alignLeft="@+id/btnExternalS"
+        android:layout_alignStart="@+id/btnExternalS" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Next"
+        android:onClick="nextActiviy"
+        android:id="@+id/btnNext"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/tvMessage"
+        android:layout_toEndOf="@+id/tvMessage"
+        android:layout_marginBottom="22dp" />
+
+
+</RelativeLayout>
